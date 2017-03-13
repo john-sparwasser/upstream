@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('oauth_callback', 'TwitchOauthController@oauthCallback');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
